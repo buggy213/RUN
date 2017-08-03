@@ -37,10 +37,9 @@ public class MainMenu : MonoBehaviour {
 		mainCanvas.gameObject.SetActive(false);
 	}
 
-	public void LoadSceneNumber(int number)
+    public void LoadScene(string name)
     {
-        SceneManager.LoadScene(number);
-        Debug.Log("Loaded scene number: " + number);
+        SceneManager.LoadScene(name);
     }
 
 	public void StorePress() {
